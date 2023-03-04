@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'titlebar.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_TB(object):
+    def setupUi(self, TB):
+        TB.setObjectName("TB")
+        TB.resize(940, 40)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(TB.sizePolicy().hasHeightForWidth())
+        TB.setSizePolicy(sizePolicy)
+        TB.setMinimumSize(QtCore.QSize(170, 40))
+        TB.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.horizontalLayout = QtWidgets.QHBoxLayout(TB)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setSpacing(0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.toolBtn = QtWidgets.QToolButton(TB)
+        self.toolBtn.setMinimumSize(QtCore.QSize(40, 40))
+        self.toolBtn.setMaximumSize(QtCore.QSize(40, 40))
+        self.toolBtn.setText("")
+        self.toolBtn.setObjectName("toolBtn")
+        self.horizontalLayout.addWidget(self.toolBtn)
+        self.spacer = QtWidgets.QWidget(TB)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.spacer.sizePolicy().hasHeightForWidth())
+        self.spacer.setSizePolicy(sizePolicy)
+        self.spacer.setMinimumSize(QtCore.QSize(10, 40))
+        self.spacer.setMaximumSize(QtCore.QSize(10, 40))
+        self.spacer.setObjectName("spacer")
+        self.horizontalLayout.addWidget(self.spacer)
+        self.titleLabel = QtWidgets.QLabel(TB)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Ignored, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.titleLabel.sizePolicy().hasHeightForWidth())
+        self.titleLabel.setSizePolicy(sizePolicy)
+        self.titleLabel.setMinimumSize(QtCore.QSize(0, 40))
+        self.titleLabel.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.titleLabel.setObjectName("titleLabel")
+        self.horizontalLayout.addWidget(self.titleLabel)
+        self.minBtn = QtWidgets.QPushButton(TB)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.minBtn.sizePolicy().hasHeightForWidth())
+        self.minBtn.setSizePolicy(sizePolicy)
+        self.minBtn.setMinimumSize(QtCore.QSize(40, 40))
+        self.minBtn.setMaximumSize(QtCore.QSize(60, 40))
+        self.minBtn.setText("")
+        self.minBtn.setObjectName("minBtn")
+        self.horizontalLayout.addWidget(self.minBtn)
+        self.sizeBtn = QtWidgets.QPushButton(TB)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.sizeBtn.sizePolicy().hasHeightForWidth())
+        self.sizeBtn.setSizePolicy(sizePolicy)
+        self.sizeBtn.setMinimumSize(QtCore.QSize(40, 40))
+        self.sizeBtn.setMaximumSize(QtCore.QSize(60, 40))
+        self.sizeBtn.setText("")
+        self.sizeBtn.setObjectName("sizeBtn")
+        self.horizontalLayout.addWidget(self.sizeBtn)
+        self.closeBtn = QtWidgets.QPushButton(TB)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.closeBtn.sizePolicy().hasHeightForWidth())
+        self.closeBtn.setSizePolicy(sizePolicy)
+        self.closeBtn.setMinimumSize(QtCore.QSize(40, 40))
+        self.closeBtn.setMaximumSize(QtCore.QSize(60, 40))
+        self.closeBtn.setText("")
+        self.closeBtn.setObjectName("closeBtn")
+        self.horizontalLayout.addWidget(self.closeBtn)
+
+        self.retranslateUi(TB)
+        QtCore.QMetaObject.connectSlotsByName(TB)
+
+    def retranslateUi(self, TB):
+        _translate = QtCore.QCoreApplication.translate
+        TB.setWindowTitle(_translate("TB", "Form"))
+        self.titleLabel.setText(_translate("TB", "TextLabel"))
+
